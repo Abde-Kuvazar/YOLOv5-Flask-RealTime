@@ -1,35 +1,20 @@
-# Yolov5 Object Detection on Live Stream Video via Flask
-![framework](https://img.shields.io/badge/framework-flask-red)
-![libraries](https://img.shields.io/badge/libraries-opencv-green)
-![models](https://img.shields.io/badge/models-yolov5-yellow)
+🧠 YOLOv5 Real-Time Object Detection via Flask
 
-The Yolov5s pretained model is deployed using flask.
-This repo contains example apps for exposing the [yolo5](https://github.com/ultralytics/yolov5) object detection model from [pytorch hub](https://pytorch.org/hub/ultralytics_yolov5/) via a [flask](https://flask.palletsprojects.com/en/1.1.x/) api/app.
+This project demonstrates how to perform **real-time object detection** using a pre-trained **YOLOv5s** model and stream live detection results through a **Flask web application**.
 
+🚀 Real-time, browser-based object detection on webcam feed using PyTorch & Flask.
 
+---
 
-## Web app
-Simple app that enables live webcam detection using pretrained YOLOv5s weights and see real time inference result of the model in the browser.
+🔧 Features
 
+- ⚡ Real-time object detection with YOLOv5s
+- 📸 Live webcam feed streamed to the browser
+- 🌐 Web-based interface powered by Flask
+- 🐳 Docker-ready for easy deployment
+- 🧠 Powered by PyTorch and Torch Hub models
 
+---
 
-## Run & Develop locally
-Run locally and dev:
-* `conda create -n <VENV>`
-* `conda activate <VENV>`
-* `(<VENV>) $ pip install -r requirements.txt`
-* `(<VENV>) $ flask run`
+📁 Project Structure
 
-## Docker
-The example dockerfile shows how to expose the rest API:
-```
-# Build
-docker build -t yolov5 .
-# Run
-docker run -p 5000:5000 yolov5-flask:latest
-```
-
-## reference
-- https://github.com/ultralytics/yolov5
-- https://github.com/jzhang533/yolov5-flask
-- https://github.com/avinassh/pytorch-flask-api-heroku
